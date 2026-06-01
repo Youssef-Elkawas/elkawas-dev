@@ -3,40 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+        <!-- ================= GOOGLE FONT ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
     <title>Elkawas.Dev - Blog</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <hr>
-        </nav>
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- ================= LOGO ================= -->
+
+                <a href="index.html" class="logo">
+
+                    Elkawas.<span>Dev</span>
+
+                </a>
+
+                <!-- ================= NAVIGATION ================= -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html" class="active-link">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
 
     <main>
-        <h1>Blog</h1>
-        <p>Here, I will document every step of my journey: what I learn, what I build, and how I improve over time. I want to use this space to journal my progress without perfectionism and without a script.</p>
 
-        <article>
-            <section>
-                <h3>Post 1: My First Blog Post</h3>
-                <p>After completing the CS50x course, I didn't know what to do next or what the next step was. I saw many courses, and everyone said, 'You will have a big loss if you miss this course.' I got distracted, but I grabbed a pen and paper and wrote down exactly what I wanted to do and where exactly I wanted to go. I wrote it in simple language. I found through CS50x that I am interested in web development. So, I decided that I want to create websites that solve real problems by building them from A to Z. This is who I want to be: a Full-Stack Developer. Since the road wasn't completely clear to me, I used AI to draw a simple roadmap with clear steps. I realized that I couldn't predict the whole path; I will know it as I move along. The first step was HTML, next is CSS...</p>
-            </section>
-        </article>
+        <section class="blog-hero">
+
+            <div class="container">
+
+                <div class="blog-header">
+
+                    <p class="section-label">
+                        My Journey
+                    </p>
+
+                    <h1 class="blog-title">
+                        Blog
+                    </h1>
+
+                    <p class="blog-description">
+                        Here, I document my learning journey, lessons, mistakes,
+                        wins, and everything I build as I grow into a full-stack
+                        developer.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <div class="blog-grid">
+
+                    <article class="blog-card">
+
+                        <span class="blog-date">
+                            First Entry
+                        </span>
+
+                        <h2 class="blog-post-title">
+                            My First Blog Post
+                        </h2>
+
+                        <p class="blog-post-text">
+
+                            After completing CS50x, I didn't know exactly what
+                            the next step should be. Every course promised huge
+                            results and I became distracted.
+
+                            So I grabbed a pen and paper and wrote down exactly
+                            what I wanted to become.
+
+                            Through CS50x I discovered that web development
+                            excited me most.
+
+                            I decided that I wanted to build websites and real
+                            products from A to Z and become a Full-Stack
+                            Developer.
+
+                            Since the path wasn't completely clear, I used AI
+                            to help me create a roadmap.
+
+                            What I learned is simple:
+
+                            You don't need to see the whole road.
+
+                            You only need to see the next step.
+
+                            For me, that next step was HTML.
+
+                            Then CSS.
+
+                            Then whatever comes after that.
+
+                        </p>
+
+                    </article>
+
+                    <article class="blog-card">
+
+                        <span class="blog-date">
+                            second step
+                        </span>
+
+                        <h2 class="blog-post-title">
+                            CSS Confusion
+                        </h2>
+
+                        <p class="blog-post-text">
+
+                            After learning HTML, I started learning CSS.
+
+                            I was confused by all the different properties and I thought I had to memorize them all.
+
+                            But actually I only need to learn how to use them to know which one fit here to achieve the design I want.
+
+                            It's not about memorizing, it's about understanding how to apply them.
+
+                            And the most hard obstacle I faced was structuring my HTML in a way that makes it easy to style with CSS.
+
+                            Then I realized this is a skill that I will develop over time as I build more projects and see how other people structure their HTML.
+
+                            More projects, more experience, more understanding of how to structure my HTML and use CSS effectively.
+
+                            Next step is JavaScript, and I know that as I learn JavaScript, my understanding of HTML and CSS will also improve because they are all connected.
+
+                            <span class="blog-post-note">
+                                small note: You will never know the road until you start walking it.
+                            </span>
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
-    <footer>
-        <hr>
-        <p>Youssef Elkawas - <a href="index.html">Elkawas.Dev</a> 2026 &copy;</p>
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <p class="footer-text">
+
+                Youssef Elkawas — Elkawas.<span class="dev">Dev</span> © 2026
+
+            </p>
+
+        </div>
+
     </footer>
 </body>
 
 </html>
-

@@ -3,61 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Elkawas.Dev - Projects</title>
+        <!-- ================= GOOGLE FONT ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <hr>
-        </nav>
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- ================= LOGO ================= -->
+
+                <a href="index.html" class="logo">
+
+                    Elkawas.<span>Dev</span>
+
+                </a>
+
+                <!-- ================= NAVIGATION ================= -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html" class="active-link">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
-
     <main>
-        <h1>My Projects</h1>
-        <p>This page will include the projects I am building as I grow as a developer. Each project represents a step forward in my journey.</p>
 
-        <section>
-            <h1>The Main Project: <a href="index.html">Elkawas.Dev</a></h1>
-            <p>This is my main personal developer project. It started as a simple HTML website and will continue to improve as I learn new technologies.</p>
-            <ul>
-                <li>Status: In Progress</li>
-                <li>Technology: HTML</li>
-                <li>Link: <a href="https://github.com/Youssef-Elkawas/elkawas-dev.git">View Project</a></li>
-            </ul>
+        <!-- ================= HERO ================= -->
+
+        <section class="projects-hero">
+
+            <div class="container">
+
+                <div class="projects-header">
+
+                    <p class="section-label">
+                        Portfolio
+                    </p>
+
+                    <h1 class="projects-title">
+                        My Projects
+                    </h1>
+
+                    <p class="projects-description">
+
+                        This page includes the projects I am building as I grow as a developer.
+
+                        Each project represents a step forward in my journey.
+
+                    </p>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <hr>
+        <!-- ================= PROJECTS ================= -->
 
-        <section>
-            <h1>HTML Multi-Page Website</h1>
-            <h3>HTML Practice Website</h3>
-            <p>This is my first practice project built with HTML. It helped me understand website structure, semantic HTML, navigation, forms, and page linking.</p>
-            <ul>
-                <li>Status: Completed</li>
-                <li>Technology: HTML</li>
-                <li>Link: <a href="https://github.com/Youssef-Elkawas/html-multi-page-website.git">View Project</a></li>
-            </ul>
-        </section>
-        
-        <hr>
+        <section class="content-section">
 
-        <section>
-            <h3>More upcoming projects coming soon...</h3>
+            <div class="container">
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+
+                    <article class="project-card">
+
+                        <h2 class="project-title">
+
+                            Elkawas.Dev
+
+                        </h2>
+
+                        <p class="project-description">
+
+                            This is my main personal developer project.
+
+                            It started as a simple HTML website and will continue evolving as I learn new technologies.
+
+                        </p>
+
+                        <ul class="project-details">
+
+                            <li>
+                                Status: In Progress
+                            </li>
+
+                            <li>
+                                Technology: HTML & CSS
+                            </li>
+
+                        </ul>
+
+                        <a
+                            href="https://github.com/Youssef-Elkawas/elkawas-dev.git"
+                            class="btn btn-primary"
+                            target="_blank"
+                        >
+                            View Project
+                        </a>
+
+                    </article>
+
+                    <!-- PROJECT 2 -->
+
+                    <article class="project-card">
+
+                        <h2 class="project-title">
+
+                            HTML Multi-Page Website
+
+                        </h2>
+
+                        <p class="project-description">
+
+                            My first practice project built with HTML.
+
+                            It helped me understand semantic HTML, navigation, forms and page linking.
+
+                        </p>
+
+                        <ul class="project-details">
+
+                            <li>
+                                Status: Completed
+                            </li>
+
+                            <li>
+                                Technology: HTML
+                            </li>
+
+                        </ul>
+
+                        <a
+                            href="https://github.com/Youssef-Elkawas/html-multi-page-website.git"
+                            class="btn btn-secondary"
+                            target="_blank"
+                        >
+                            View Project
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
         </section>
+
+        <!-- ================= UPCOMING ================= -->
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <div class="upcoming-projects">
+
+                    <h2 class="section-title">
+
+                        More Projects Coming Soon...
+
+                    </h2>
+
+                    <p class="section-text">
+
+                        JavaScript, React, Backend and Full-Stack projects are on the way.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <hr>
-        <p>Youssef Elkawas - <a href="index.html">Elkawas.Dev</a> 2026 &copy;</p>
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <p class="footer-text">
+
+                Youssef Elkawas — Elkawas.<span class="dev">Dev</span> © 2026
+
+            </p>
+
+        </div>
+
     </footer>
 </body>
 
 </html>
-

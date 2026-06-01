@@ -3,56 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elkawas.Dev - Home</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Elkawas.Dev</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <hr>
-        </nav>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    Elkawas.<span>Dev</span>
+                </a>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html" class="active-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
 
+    <!-- ================= MAIN ================= -->
+
     <main>
-        <section>
-            <h1>Youssef Elkawas</h1>
-            <h2>Aspiring Full-Stack Developer</h2>
-            <p>Hello, I'm Youssef, a 17-year-old passionate full-stack developer and a high school student from Egypt (Alexandria). I am building my skills step by step through projects, practice and real learning. My goal is to become a senior technical builder and create real systems and SaaS products in the future. 
-            </p>
-            <br>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero-section">
+
+            <div class="container hero-container">
+
+                <!-- LEFT CONTENT -->
+
+                <div class="hero-content">
+
+                    <p class="hero-intro">
+                        Hi, I'm
+                    </p>
+
+                    <h1 class="hero-title">
+                        Youssef <br>
+                        Elkawas
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        Aspiring Full-Stack Developer
+                    </h2>
+
+                    <p class="hero-description">
+
+                        Hello, I'm Youssef, a 17-year-old passionate full-stack developer and a high school student from Egypt (Alexandria).
+
+                        I am building my skills step by step through projects, practice and real learning.
+
+                        My goal is to become a senior technical builder and create real systems and SaaS products in the future.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="projects.html" class="btn btn-primary">
+                            View My Work
+                        </a>
+
+                        <a href="contact.html" class="btn btn-secondary">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT VISUAL -->
+
+                <div class="hero-visual">
+
+                    <div class="hero-glow"></div>
+
+                    <img
+                        src="assets/images/1.png"
+                        alt="Laptop Setup"
+                        class="hero-image"
+                    >
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section>
-          <h2>What I am doing</h2>
-          <p>Right now, I am focused on learning web development fundamentals. I started with the CS50x course from Harvard (Certificate in my <a href="https://www.linkedin.com/in/youssef-elkawas">Linkedin Profile</a>) and am building my first HTML projects. I believe that small steps day by day create an incredible accumulation. </p>  
+        <!-- ================= WHAT I AM DOING ================= -->
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    What I am doing
+                </h2>
+
+                <p class="section-text">
+
+                    Right now, I am focused on learning web development fundamentals.
+
+                    I started with the CS50x course from Harvard and am building my first HTML projects.
+
+                    I believe that small steps day by day create incredible accumulation.
+
+                </p>
+
+            </div>
+
         </section>
 
-        <section>
-            <h1>My Goals</h1>
-            <ul>
-                <li>Become a Full-Stack developer</li>
-                <li>Build real projects and systems </li>
-                <li>Create a software that solves a real problem</li>
-                <li>Share my journey honestly and step by step</li>
-            </ul>
+        <!-- ================= GOALS ================= -->
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    My Goals
+                </h2>
+
+                <div class="goals-grid">
+
+                    <div class="goal-card">
+                        Become a Full-Stack Developer
+                    </div>
+
+                    <div class="goal-card">
+                        Build Real Projects & Systems
+                    </div>
+
+                    <div class="goal-card">
+                        Create Software That Solves Problems
+                    </div>
+
+                    <div class="goal-card">
+                        Share My Journey Honestly
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section>
-            <h2>Featured Project</h2>
-            <p>Elkawas.Dev is my main long-term project. It started with HTML and will keep evolving as I learn more, such as CSS, JavaScript, React and backend technologies.</p>
+        <!-- ================= FEATURED ================= -->
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Featured Project
+                </h2>
+
+                <p class="section-text">
+
+                    Elkawas.Dev is my main long-term project.
+
+                    It started with HTML and will continue evolving as I learn CSS, JavaScript, React and backend technologies.
+
+                </p>
+
+            </div>
+
         </section>
+
     </main>
 
-    <footer>
-        <hr>
-        <p>Youssef Elkawas - <a href="index.html">Elkawas.Dev</a> 2026 &copy;</p>
-    </footer>
-</body>
+    <!-- ================= FOOTER ================= -->
 
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                Youssef Elkawas — Elkawas.<span class="dev">Dev</span> © 2026
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
 </html>
