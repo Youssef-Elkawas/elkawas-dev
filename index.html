@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
 
     <title>Elkawas.Dev</title>
@@ -63,6 +67,14 @@
 
                 </ul>
 
+                <button class="theme-btn">
+
+                    <span class="theme-icon">
+                        🌙
+                    </span>
+
+                </button>
+
             </nav>
 
         </div>
@@ -108,7 +120,7 @@
 
                     <div class="hero-buttons">
 
-                        <a href="projects.html" class="btn btn-primary">
+                        <a href="projects.html" class="btn btn-primary view">
                             View My Work
                         </a>
 
@@ -127,7 +139,7 @@
                     <div class="hero-glow"></div>
 
                     <img
-                        src="1.png"
+                        src="assets/images/1.png"
                         alt="Laptop Setup"
                         class="hero-image"
                     >
@@ -168,25 +180,25 @@
 
             <div class="container">
 
-                <h2 class="section-title">
+                <h2 class="section-title ">
                     My Goals
                 </h2>
 
                 <div class="goals-grid">
 
-                    <div class="goal-card">
+                    <div class="card">
                         Become a Full-Stack Developer
                     </div>
 
-                    <div class="goal-card">
+                    <div class="card">
                         Build Real Projects & Systems
                     </div>
 
-                    <div class="goal-card">
+                    <div class="card">
                         Create Software That Solves Problems
                     </div>
 
-                    <div class="goal-card">
+                    <div class="card">
                         Share My Journey Honestly
                     </div>
 
@@ -234,5 +246,6 @@
 
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

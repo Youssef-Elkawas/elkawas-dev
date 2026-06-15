@@ -24,6 +24,22 @@
 
 }
 
+.light-mode {
+
+    --bg-color: #F8FAFC;
+
+    --primary-color: #7C3AED;
+    --secondary-color: #A855F7;
+
+    --text-color: #0F172A;
+
+    --text-muted: #475569;
+
+    --card-bg: rgba(255,255,255,0.8);
+
+    --border-color: rgba(15,23,42,0.08);
+}
+
 /* ================= GLOBAL ================= */
 
 html {
@@ -39,6 +55,15 @@ body {
     font-family: 'Inter', sans-serif;
 
     overflow-x: hidden;
+}
+
+body,
+.header,
+.goal-card,
+.btn,
+.nav-links a {
+
+    transition: all .3s ease;
 }
 
 /* ================= CONTAINER ================= */
@@ -82,6 +107,15 @@ body {
     align-items: center;
 }
 
+.light-mode .header {
+
+    background: rgba(255,255,255,0.85);
+
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+
+    backdrop-filter: blur(10px);
+}
+
 /* ================= LOGO ================= */
 
 .logo {
@@ -92,7 +126,7 @@ body {
 
     font-weight: 800;
 
-    color: white;
+    color: var(--text-color);
 
     text-decoration: none;
 }
@@ -102,6 +136,10 @@ body {
     color: var(--primary-color);
 }
 
+.light-mode .logo {
+
+    color: #111827;
+}
 /* ================= NAV LINKS ================= */
 
 .nav-links {
@@ -121,7 +159,7 @@ body {
 
 .nav-links a {
 
-    color: white;
+    color: var(--text-color);
 
     text-decoration: none;
 
@@ -144,6 +182,41 @@ body {
     text-underline-offset: 8px;
 }
 
+.theme-btn {
+
+    background: transparent;
+
+    border: 1px solid var(--border-color);
+
+    color: var(--text-color);
+
+    padding: .5rem .75rem;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    margin-left: 1rem;
+
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    color: var(--secondary-color);
+    transform: translateY(-1px);
+    
+    box-shadow: 0 2px 5px var(--primary-color);
+}
+
+.light-mode .nav-links a {
+
+    color: #1E293B;
+}
+
+.light-mode .nav-links a:hover {
+
+    color: var(--primary-color);
+}
 /* ================= HERO ================= */
 
 .hero-section {
@@ -170,6 +243,12 @@ body {
     gap: 3rem;
 }
 
+.light-mode .hero-glow {
+
+    opacity: 0.08;
+
+    filter: blur(140px);
+}
 /* ================= HERO CONTENT ================= */
 
 .hero-content {
@@ -247,7 +326,7 @@ body {
 
     background: var(--primary-color);
 
-    color: white;
+    color: var(--text-color);
 }
 
 .btn-primary:hover {
@@ -261,7 +340,7 @@ body {
 
     border: 1px solid var(--primary-color);
 
-    color: white;
+    color: var(--text-color);
 }
 
 .btn-secondary:hover {
@@ -269,6 +348,18 @@ body {
     background: var(--primary-color);
 
     transform: translateY(-4px);
+}
+
+.light-mode .btn-secondary {
+
+    color: #111827;
+
+    border-color: var(--primary-color);
+}
+
+.light-mode .btn-secondary:hover {
+
+    color: var(--text-color);
 }
 
 /* ================= HERO VISUAL ================= */
@@ -354,29 +445,49 @@ body {
 }
 
 /* ================= CARDS ================= */
-
-.goal-card {
+.card {
 
     background: var(--card-bg);
 
     border: 1px solid var(--border-color);
 
+    border-radius: 24px;
+
     padding: 2rem;
 
-    border-radius: 20px;
-
-    transition: 0.3s ease;
-
     backdrop-filter: blur(12px);
+
+    transition: .3s ease;
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(139,92,246,.3);
+
+    box-shadow: 0 0 30px rgba(139,92,246,.15);
+}
+
+
+.goal-card {
+
+    padding: 1.5rem;
+
+    border-radius: 20px;
 
     line-height: 1.7;
 }
 
-.goal-card:hover {
 
-    transform: translateY(-10px);
 
-    box-shadow: 0 0 30px rgba(139,92,246,0.2);
+.light-mode .goal-card {
+
+    background: var(--text-color);
+
+    border: 1px solid rgba(0,0,0,0.08);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 /* ================= FOOTER ================= */
@@ -541,37 +652,11 @@ body {
     gap: 2rem;
 }
 
-/* ================= PHILOSOPHY CARD ================= */
-
-.philosophy-card {
-
-    background: rgba(17, 24, 39, 0.45);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 24px;
-
-    padding: 2rem;
-
-    backdrop-filter: blur(12px);
-
-    transition: 0.3s ease;
-}
-
-.philosophy-card:hover {
-
-    transform: translateY(-8px);
-
-    border-color: rgba(139,92,246,0.3);
-
-    box-shadow: 0 0 30px rgba(139,92,246,0.15);
-}
-
 /* ================= CARD CONTENT ================= */
 
 .card-title {
 
-    color: white;
+    color: var(--text-color);
 
     font-size: 1.25rem;
 
@@ -671,6 +756,10 @@ body {
     margin: 0 auto;
 }
 
+.view {
+    color: white;
+}
+
 /* ================= GRID ================= */
 
 .projects-grid {
@@ -683,37 +772,11 @@ body {
     gap: 2rem;
 }
 
-/* ================= CARD ================= */
-
-.project-card {
-
-    background: rgba(17, 24, 39, 0.45);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 24px;
-
-    padding: 2rem;
-
-    backdrop-filter: blur(12px);
-
-    transition: 0.3s ease;
-}
-
-.project-card:hover {
-
-    transform: translateY(-8px);
-
-    border-color: rgba(139,92,246,0.3);
-
-    box-shadow: 0 0 30px rgba(139,92,246,0.15);
-}
-
 /* ================= PROJECT CONTENT ================= */
 
 .project-title {
 
-    color: white;
+    color: var(--text-color);
 
     margin-bottom: 1rem;
 
@@ -797,32 +860,6 @@ body {
     gap: 2rem;
 }
 
-/* ================= BLOG CARD ================= */
-
-.blog-card {
-
-    background: rgba(17, 24, 39, 0.45);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 24px;
-
-    padding: 2rem;
-
-    backdrop-filter: blur(12px);
-
-    transition: 0.3s ease;
-}
-
-.blog-card:hover {
-
-    transform: translateY(-8px);
-
-    border-color: rgba(139,92,246,0.3);
-
-    box-shadow: 0 0 30px rgba(139,92,246,0.15);
-}
-
 /* ================= BLOG CONTENT ================= */
 
 .blog-date {
@@ -846,7 +883,7 @@ body {
 
     margin-bottom: 1rem;
 
-    color: white;
+    color: var(--text-color);
 }
 
 .blog-post-text {
@@ -919,37 +956,11 @@ body {
     gap: 2rem;
 }
 
-/* ================= ITEM ================= */
-
-.contact-item {
-
-    background: rgba(17, 24, 39, 0.45);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 24px;
-
-    padding: 2rem;
-
-    backdrop-filter: blur(12px);
-
-    transition: 0.3s ease;
-}
-
-.contact-item:hover {
-
-    transform: translateY(-8px);
-
-    border-color: rgba(139,92,246,0.3);
-
-    box-shadow: 0 0 30px rgba(139,92,246,0.15);
-}
-
 /* ================= CONTENT ================= */
 
 .contact-item h3 {
 
-    color: white;
+    color: var(--text-color);
 
     margin-bottom: 1rem;
 
@@ -975,4 +986,110 @@ body {
 .contact-item a:hover {
 
     color: var(--secondary-color);
+}
+
+/* ================= JS CSS ================= */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.6);
+
+    backdrop-filter: blur(8px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .3s ease;
+
+    z-index: 9999;
+}
+
+.modal-overlay.show {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.modal {
+
+    width: min(420px, 90%);
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 24px;
+
+    padding: 2rem;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 40px rgba(0,0,0,.25);
+}
+
+.modal-title {
+
+    margin-bottom: 1rem;
+
+    color: var(--primary-color);
+}
+
+.modal-text {
+
+    color: var(--text-muted);
+
+    line-height: 1.7;
+
+    margin-bottom: 2rem;
+}
+
+.modal-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.modal-btn {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: .8rem 1.5rem;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+}
+
+.continue-btn {
+
+    background: var(--primary-color);
+
+    color: white;
+}
+
+.cancel-btn {
+
+    background: transparent;
+
+    border: 1px solid var(--border-color);
+
+    color: var(--text-color);
 }

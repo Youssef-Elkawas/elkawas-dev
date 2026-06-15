@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
     <title>Elkawas.Dev - Projects</title>
         <!-- ================= GOOGLE FONT ================= -->
@@ -67,6 +72,14 @@
 
                 </ul>
 
+                <button class="theme-btn">
+
+                    <span class="theme-icon">
+                        🌙
+                    </span>
+
+                </button>
+
             </nav>
 
         </div>
@@ -114,7 +127,7 @@
 
                     <!-- PROJECT 1 -->
 
-                    <article class="project-card">
+                    <article class="card">
 
                         <h2 class="project-title">
 
@@ -137,14 +150,14 @@
                             </li>
 
                             <li>
-                                Technology: HTML & CSS
+                                Technology: HTML, CSS & JavaScript
                             </li>
 
                         </ul>
 
                         <a
                             href="https://github.com/Youssef-Elkawas/elkawas-dev.git"
-                            class="btn btn-primary"
+                            class="btn btn-primary view"
                             target="_blank"
                         >
                             View Project
@@ -154,7 +167,7 @@
 
                     <!-- PROJECT 2 -->
 
-                    <article class="project-card">
+                    <article class="card">
 
                         <h2 class="project-title">
 
@@ -239,6 +252,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

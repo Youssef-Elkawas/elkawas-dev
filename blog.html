@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
         <!-- ================= GOOGLE FONT ================= -->
 
@@ -67,6 +72,14 @@
 
                 </ul>
 
+                <button class="theme-btn">
+
+                    <span class="theme-icon">
+                        🌙
+                    </span>
+
+                </button>
+
             </nav>
 
         </div>
@@ -107,7 +120,7 @@
 
                 <div class="blog-grid">
 
-                    <article class="blog-card">
+                    <article class="blog-card card">
 
                         <span class="blog-date">
                             First Entry
@@ -152,7 +165,7 @@
 
                     </article>
 
-                    <article class="blog-card">
+                    <article class="blog-card card">
 
                         <span class="blog-date">
                             second step
@@ -181,7 +194,67 @@
                             Next step is JavaScript, and I know that as I learn JavaScript, my understanding of HTML and CSS will also improve because they are all connected.
 
                             <span class="blog-post-note">
+                                <br>
                                 small note: You will never know the road until you start walking it.
+                            </span>
+                        </p>
+
+                    </article>
+
+                    <article class="blog-card card">
+
+                        <span class="blog-date">
+                            third step
+                        </span>
+
+                        <h2 class="blog-post-title">
+                            Finishing JS
+                        </h2>
+
+                        <p class="blog-post-text">
+
+                            Finishing JavaScript and Looking Ahead
+
+                            After finishing CSS, I moved on to JavaScript, and the learning experience was very different.
+
+                            CSS is mostly visual. You can instantly see the results of what you build, whether it's a layout, animation, or design improvement. JavaScript, on the other hand, requires much more logical thinking and problem-solving.
+
+                            One of the most important things I learned is that JavaScript is mainly used to:
+                            <br>
+                            <br>
+                            Save and manage data. ✅
+                            <br>
+                            <br>
+                            Generate HTML dynamically. ✅
+                            <br>
+                            <br>
+                            Make websites interactive. ✅
+                            <br>
+                            <br>
+                            These capabilities make building websites much faster and more powerful.
+
+                            JavaScript is also the gateway to backend development. However, before diving deeper into the backend, I decided to learn React first because it is heavily based on JavaScript and is one of the most widely used frontend technologies today.
+
+
+
+
+                            <span class="blog-post-note">
+                                <br>
+                                small note: The journey of change is like driving a car on a dark road that is 100 kilometers long.
+
+                                You don't need to see the entire road before you start. You don't need all 100 kilometers to be illuminated.
+
+                                You only need the ten meters in front of you to be visible through your headlights.
+
+                                As you move forward, the next ten meters become visible, and then the next ten after that.
+
+                                The same principle applies to life.
+
+                                You will never reach a point where you know everything you need before starting something new.
+
+                                Most of the time, clarity comes from movement, not from waiting.
+
+                                So start with what you know, take the next step, and trust that the road will reveal itself along the way.
                             </span>
                         </p>
 
@@ -208,6 +281,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

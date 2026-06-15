@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
         <!-- ================= GOOGLE FONT ================= -->
 
@@ -67,6 +72,14 @@
 
                 </ul>
 
+                <button class="theme-btn">
+
+                    <span class="theme-icon">
+                        🌙
+                    </span>
+
+                </button>
+
             </nav>
 
         </div>
@@ -111,7 +124,7 @@
 
                 <div class="contact-card">
 
-                    <div class="contact-item">
+                    <div class="contact-item card">
 
                         <h3>Name</h3>
 
@@ -119,7 +132,7 @@
 
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item card">
 
                         <h3>Location</h3>
 
@@ -127,12 +140,14 @@
 
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item card">
 
                         <h3>GitHub</h3>
 
                         <a
                             href="https://github.com/Youssef-Elkawas"
+                            class="external-link"
+                            data-site="GitHub"
                             target="_blank"
                         >
                             Visit Profile
@@ -140,12 +155,14 @@
 
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item card">
 
                         <h3>LinkedIn</h3>
 
                         <a
                             href="https://www.linkedin.com/in/youssef-elkawas/"
+                            class="external-link"
+                            data-site="LinkedIn"
                             target="_blank"
                         >
                             Visit Profile
@@ -153,11 +170,14 @@
 
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item card">
 
                         <h3>Email</h3>
 
-                        <a href="mailto:youssef.elkawas.dev@gmail.com">
+                        <a href="mailto:youssef.elkawas.dev@gmail.com"
+                        class="external-link"
+                        data-site="Gmail"
+                        >
 
                             youssef.elkawas.dev@gmail.com
 
@@ -165,12 +185,14 @@
 
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item card">
 
                         <h3>WhatsApp</h3>
 
                         <a
                             href="https://wa.me/201550202828"
+                            class="external-link"
+                            data-site="WhatsApp"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Feel free to message me on WhatsApp"
@@ -201,6 +223,36 @@
         </div>
 
     </footer>
+
+    <div class="modal-overlay">
+
+        <div class="modal">
+
+            <h3 class="modal-title">
+                Leaving Elkawas.Dev
+            </h3>
+
+            <p class="modal-text">
+                You are about to visit an external website.
+            </p>
+
+            <div class="modal-buttons">
+
+                <button class="modal-btn cancel-btn">
+                    Stay Here
+                </button>
+
+                <button class="modal-btn continue-btn">
+                    Continue
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
