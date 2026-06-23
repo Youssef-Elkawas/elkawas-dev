@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+        <!-- ================= GOOGLE FONT ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <title>Elkawas.Dev - Contact</title>
+</head>
+<body>
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- ================= LOGO ================= -->
+
+                <a href="index.html" class="logo">
+
+                    Elkawas.<span>Dev</span>
+
+                </a>
+
+                <!-- ================= NAVIGATION ================= -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="active-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="theme-btn">
+
+                    <span class="theme-icon">
+                        🌙
+                    </span>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="contact-hero">
+
+            <div class="container">
+
+                <div class="contact-header">
+
+                    <p class="section-label">
+                        Get In Touch
+                    </p>
+
+                    <h1 class="contact-title">
+                        Contact Me
+                    </h1>
+
+                    <p class="contact-description">
+
+                        Thank you for visiting my website.
+
+                        If you'd like to connect with me, follow my journey,
+                        collaborate on a project, or simply say hello,
+                        you can find all my contact information below.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <div class="contact-card">
+
+                    <div class="contact-item card">
+
+                        <h3>Name</h3>
+
+                        <p>Youssef Elkawas</p>
+
+                    </div>
+
+                    <div class="contact-item card">
+
+                        <h3>Location</h3>
+
+                        <p>Alexandria, Egypt</p>
+
+                    </div>
+
+                    <div class="contact-item card">
+
+                        <h3>GitHub</h3>
+
+                        <a
+                            href="https://github.com/Youssef-Elkawas"
+                            class="external-link"
+                            data-site="GitHub"
+                            target="_blank"
+                        >
+                            Visit Profile
+                        </a>
+
+                    </div>
+
+                    <div class="contact-item card">
+
+                        <h3>LinkedIn</h3>
+
+                        <a
+                            href="https://www.linkedin.com/in/youssef-elkawas/"
+                            class="external-link"
+                            data-site="LinkedIn"
+                            target="_blank"
+                        >
+                            Visit Profile
+                        </a>
+
+                    </div>
+
+                    <div class="contact-item card">
+
+                        <h3>Email</h3>
+
+                        <a href="mailto:youssef.elkawas.dev@gmail.com"
+                        class="external-link"
+                        data-site="Gmail"
+                        >
+
+                            youssef.elkawas.dev@gmail.com
+
+                        </a>
+
+                    </div>
+
+                    <div class="contact-item card">
+
+                        <h3>WhatsApp</h3>
+
+                        <a
+                            href="https://wa.me/201550202828"
+                            class="external-link"
+                            data-site="WhatsApp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Feel free to message me on WhatsApp"
+                        >
+                            +20 155 020 2828
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <p class="footer-text">
+
+                Youssef Elkawas — Elkawas.<span class="dev">Dev</span> © 2026
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <div class="modal-overlay">
+
+        <div class="modal">
+
+            <h3 class="modal-title">
+                Leaving Elkawas.Dev
+            </h3>
+
+            <p class="modal-text">
+                You are about to visit an external website.
+            </p>
+
+            <div class="modal-buttons">
+
+                <button class="modal-btn cancel-btn">
+                    Stay Here
+                </button>
+
+                <button class="modal-btn continue-btn">
+                    Continue
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
