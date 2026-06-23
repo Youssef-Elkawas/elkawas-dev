@@ -1,0 +1,165 @@
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIABLES ================= */
+
+:root {
+  --bg-color: #050816;
+  --primary-color: #8b5cf6;
+  --secondary-color: #a855f7;
+  --text-color: #ffffff;
+  --text-muted: #b4b7c9;
+  --card-bg: rgba(17, 24, 39, 0.6);
+  --border-color: rgba(255, 255, 255, 0.08);
+}
+
+.light-mode {
+  --bg-color: #f8fafc;
+  --primary-color: #7c3aed;
+  --secondary-color: #a855f7;
+  --text-color: #0f172a;
+  --text-muted: #475569;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --border-color: rgba(15, 23, 42, 0.08);
+}
+
+/* ================= GLOBAL ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+body,
+.header,
+.btn,
+.nav-links a {
+  transition: all 0.3s ease;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ================= SECTIONS ================= */
+
+.content-section {
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  color: var(--text-muted);
+  line-height: 1.9;
+  max-width: 850px;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* ================= CARDS ================= */
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+}
+
+.card-title {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.btn-primary:hover {
+  background: var(--secondary-color);
+  transform: translateY(-4px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+.light-mode .btn-secondary {
+  color: #111827;
+  border-color: var(--primary-color);
+}
+
+.light-mode .btn-secondary:hover {
+  color: var(--text-color);
+}
+
+.view {
+  color: white;
+}

@@ -1,0 +1,49 @@
+.contact-hero {
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.contact-header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: clamp(3rem, 7vw, 5rem);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  color: var(--text-muted);
+  line-height: 1.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.contact-item h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact-item p {
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.contact-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.dev {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.footer-light {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-muted);
+}
