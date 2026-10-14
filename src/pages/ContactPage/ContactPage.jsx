@@ -25,15 +25,6 @@ const contactItems = [
       text: 'youssef.elkawas.dev@gmail.com',
     },
   },
-  {
-    label: 'WhatsApp',
-    link: {
-      href: 'https://wa.me/201550202828',
-      siteName: 'WhatsApp',
-      text: '+20 155 020 2828',
-      title: 'Feel free to message me on WhatsApp',
-    },
-  },
 ];
 
 export default function ContactPage() {
