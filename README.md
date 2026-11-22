@@ -1,141 +1,71 @@
-# Elkawas.Dev
+# Elkawas.Dev — The Beginning
 
-Elkawas.Dev is my personal developer website and long-term learning project.
+**Elkawas.Dev** was my personal web development project, created as a space to learn, experiment, and grow as a developer.
 
-The purpose of this project is to document my growth as a developer while continuously improving the website with every new technology I learn.
+What started as a simple HTML website gradually evolved into a React-based application, serving as a practical environment where I could apply new technologies and improve my development skills.
 
-Rather than building disposable tutorial projects, I use Elkawas.Dev as a real-world application where I can practice, experiment, and gradually transform it into a complete full-stack platform.
+Today, Elkawas.Dev has officially evolved into **Beyond the Brief**, my redesigned personal website and professional portfolio.
 
----
+### A New Chapter
 
-## Current Version
+The original Elkawas.Dev project is no longer actively developed under this identity.
 
-Version 3 is built using React and modern frontend development practices.
+Its journey continues through **Beyond the Brief**, a completely reimagined experience built with modern technologies, a new visual identity, and a stronger focus on design, performance, and user experience.
 
-The website has been fully migrated from a traditional multi-page HTML/CSS/JavaScript structure into a React Single Page Application (SPA).
+**Explore the new website:**
 
----
-
-## Pages
-
-* Home
-* About
-* Projects
-* Blog
-* Contact
+### [youssefelkawas.com](https://youssefelkawas.com)
 
 ---
 
-## Technologies Used
+## Project History
 
-### Frontend
+Elkawas.Dev went through three major development stages:
 
-* React.js
-* React Router
-* JavaScript (ES6+)
-* HTML5
-* CSS3
-* Vite
+**Version 1 — The Foundation**
+- Built with HTML
+- My first steps in personal website development
 
-### Development Tools
+**Version 2 — Expanding the Experience**
+- HTML, CSS, and JavaScript
+- Responsive layouts
+- Dark and light themes
+- Blog functionality
+- Interactive features
 
-* Git
-* GitHub
+**Version 3 — React Migration**
+- React.js and Vite
+- React Router
+- Component-based architecture
+- Reusable UI components
+- Improved code organization and scalability
 
----
-
-## Features
-
-* React Single Page Application (SPA)
-* Component-Based Architecture
-* Dynamic Client-Side Routing
-* Responsive Design
-* Dark Mode / Light Mode
-* Persistent Theme Preferences
-* External Link Confirmation System
-* Reusable Components
-* Modern Navigation System
-* Mobile-Friendly User Experience
+Each version represented a new stage in my learning journey.
 
 ---
 
-## What I Learned
+## Where It All Led
 
-Building this version helped me practice:
+Elkawas.Dev was never just about building a website.
 
-* React Fundamentals
-* Components
-* Props
-* State Management
-* Effects
-* React Router
-* Project Structure & Scalability
-* Reusable UI Components
-* Theme Management
-* Responsive Design
-* Git & GitHub Workflow
-* Modern Frontend Development
+It was about learning through practice, understanding how real applications work, and continuously challenging myself to build something better.
 
----
+That philosophy eventually became the foundation of **Beyond the Brief**.
 
-## Project Evolution
+The original project remains here as a record of that journey.
 
-### Version 1
-
-* Basic HTML website
-
-### Version 2
-
-* HTML, CSS, and JavaScript
-* Responsive Design
-* Dark Mode
-* Blog System
-* External Link Confirmation
-
-### Version 3
-
-* Complete React Migration
-* Component-Based Architecture
-* React Router Navigation
-* Improved Responsiveness
-* Better Code Organization
-* Scalable Project Structure
-
----
-
-## Future Plans
-
-This project will continue evolving as I progress through my Full-Stack roadmap.
-
-Planned technologies include:
-
-* Node.js
-* Express.js
-* SQL
-* MongoDB
-* Authentication Systems
-* API Integration
-* TypeScript
-* Next.js
-* Full-Stack Applications
-* SaaS Features
-
----
-
-## Purpose
-
-Elkawas.Dev is more than a portfolio project.
-
-It serves as a public record of my learning journey, a place to experiment with new technologies, and a long-term platform that will grow alongside my skills as a developer.
+**The project has evolved. The journey continues.**
 
 ---
 
 ## Author
 
-**Youssef Elkawas**
-
-Aspiring Full-Stack Developer
-
+**Youssef Elkawas**  
+Full-Stack Web Developer  
 Alexandria, Egypt
 
-> Build. Learn. Improve. Repeat.
+**Current Website:** [youssefelkawas.com](https://youssefelkawas.com)
+
+---
+
+*From Elkawas.Dev to Beyond the Brief.*
